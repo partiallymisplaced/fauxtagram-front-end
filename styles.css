@@ -276,3 +276,50 @@ button.log-out {
   border: 2px solid #323232;
   padding: 6px 12px;
 }
+
+/* Edit */
+form.edit-user-profile {
+  width: 65%;
+  margin: 0 auto;
+}
+
+form > * {
+  width: 100%;
+}
+
+form label {
+  font-weight: 600;
+}
+
+form textarea {
+  resize: none;
+  border-color: #323232;
+  margin-bottom: 12px;
+}
+
+form input[type=text] {
+  margin-bottom: 24px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input[type=button] {
+  width: 48%;
+  padding: 12px;
+  font-size: 16px;
+}
+
+form div.button-group input[type=button].button-primary {
+  color: #FFF;
+  background-color: #2C008A;
+  border: 2px solid #2C008A;
+}
+
+form div.button-group input[type=button].button-secondary {
+  color: #323232;
+  background-color: #FFF;
+  border: 2px solid #323232;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fauxtagram</title>
+  <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Poppins:400,600" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="#" class="header-icon">
+        <i class="fas fa-home"></i>
+      </a>
+      <a href="#">
+        <h1 class="logo">Fauxtagram</h1>
+      </a>
+      <button class="log-out">Log out</button>
+    </header>
+    
+    <button class="add-image">
+      <i class="fas fa-plus"></i>
+    </button>
+    
+    <main>
+      
+      <form action="post" class="edit-user-profile">
+        <div class="user-profile-avatar">
+          <i class="far fa-user-circle"></i>
+        </div>
+        
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="username">
+
+        <label for="full-name">Full name</label>
+        <input type="text" id="full-name" placeholder="full name">
+
+        <label for="website">Website</label>
+        <input type="text" id="website" placeholder="website">
+
+        <label for="bio">Bio</label>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+
+        <div class="button-group">
+          <input type="button" value="Cancel" class="button-secondary">
+          <input type="button" value="Update profile" class="button-primary">
+        </div>
+        
+      </form>
+    </main>
+  </div>
+</body>
+</html>

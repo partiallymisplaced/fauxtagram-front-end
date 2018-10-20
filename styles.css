@@ -101,6 +101,7 @@ img {
   width: 100%;
 }
 
+/* Empty feed */
 .empty-feed-intro {
   margin: 0 auto;
   padding: 300px 0;
@@ -180,12 +181,11 @@ img {
   font-weight: 600;
 }
 
-/* Individual post */
+/* Add comment to post */
 .add-comment {
   padding-top: 20px; 
   width: 100%;
   display: flex;
-  
 }
 
 .add-comment input[type=text] {
@@ -194,4 +194,76 @@ img {
 }
 .add-comment input[type=button] {
   width: 10%;
+}
+
+/* User profile */
+.user-profile {
+  display: flex;
+  font-size: 13px;
+  padding-top: 12px; 
+  position: relative; 
+}
+
+.user-profile-avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  margin-right: 20px;
+}
+
+.user-profile-avatar i {
+  font-size: 80px;
+}
+
+.user-profile-info .username,
+.user-profile-info .full-name,
+.user-profile-info .website {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.user-profile-info .username {
+  padding-top: 12px;
+}
+
+.user-profile .bio {
+  padding-top: 12px;
+}
+
+.user-action-button {
+  font-weight: 600;
+  position: absolute;
+  top: 24px;
+  right: 0;
+  height: 42px;
+  width: 140px;
+}
+
+button.user-action-button.follow-user {
+  color: #FFF;
+  background-color: #2C008A;
+  border: 2px solid #2C008A;
+}
+
+button.user-action-button.unfollow-user,
+button.user-action-button.edit-profile {
+  color: #323232;
+  background-color: #FFF;
+  border: 2px solid #323232;
+}
+
+.user-stats {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0 48px;
+}
+
+.user-stats > * {
+  margin-right: 24px;
+  font-size: 18px;
+  color: #989898;
+}
+.stat-highlight {
+  font-size: 24px;
+  color: #323232;
 }

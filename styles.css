@@ -34,6 +34,32 @@ button {
   z-index: 100;
 }
 
+/* Inputs */
+input[type=text] {
+  padding: 6px 0;
+  border: none;
+  border-bottom: 1px solid #323232;
+}
+
+input[type=button] {
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button.button-primary {
+  color: #FFF;
+  padding: 6px 12px;
+  background-color: #2C008A;
+}
+
+.button.button-secondary {
+  color: #323232;
+  border: 2px solid #323232;
+  background-color: #FFF;
+  padding: 5px 10px;
+}
+
 /* Header */
 header {
   display: flex;
@@ -154,4 +180,18 @@ img {
   font-weight: 600;
 }
 
+/* Individual post */
+.add-comment {
+  padding-top: 20px; 
+  width: 100%;
+  display: flex;
+  
+}
 
+.add-comment input[type=text] {
+  margin-right: 20px;
+  width: calc(90% - 20px);
+}
+.add-comment input[type=button] {
+  width: 10%;
+}

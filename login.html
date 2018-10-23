@@ -10,7 +10,23 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  
+<body class="pre-auth">
+  <div class="container">
+    <header>
+      <h1>fauxtagram</h1>
+      <p>social image sharing</p>
+    </header>
+    <main>
+      <form action="submit">
+        <label for="username">Userame</label>
+        <input type="text" name="username" id="username" placeholder="username">
+
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="password">
+
+        <input type="submit" name="log-in" id="log-in" value="Log in">
+      </form>
+    </main>
+  </div>
 </body>
 </html>

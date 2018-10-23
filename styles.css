@@ -35,7 +35,9 @@ button {
 }
 
 /* Inputs */
-input[type=text] {
+input[type=text],
+input[type=email],
+input[type=password] {
   padding: 6px 0;
   border: none;
   border-bottom: 1px solid #323232;
@@ -297,7 +299,9 @@ form textarea {
   margin-bottom: 12px;
 }
 
-form input[type=text] {
+form input[type=text],
+form input[type=email],
+form input[type=password] {
   margin-bottom: 24px;
 }
 
@@ -322,4 +326,11 @@ form div.button-group input[type=button].button-secondary {
   color: #323232;
   background-color: #FFF;
   border: 2px solid #323232;
+}
+
+/* Front-facing pages (sign up & log in) */
+
+ body.pre-auth {
+   background-color: #2C008A;
+   background: linear-gradient(125deg, rgba(120,71,226,1) 0%, rgba(44,0,138,1) 100%);
 }

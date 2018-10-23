@@ -330,7 +330,135 @@ form div.button-group input[type=button].button-secondary {
 
 /* Front-facing pages (sign up & log in) */
 
- body.pre-auth {
-   background-color: #2C008A;
-   background: linear-gradient(125deg, rgba(120,71,226,1) 0%, rgba(44,0,138,1) 100%);
+body.pre-auth {
+  height: 100vh;
+  background-color: #2C008A;
+  background: linear-gradient(125deg, rgba(120,71,226,1) 0%, rgba(44,0,138,1) 100%);
+  background-repeat: no-repeat;
+}
+
+.pre-auth header {
+  color: #FFF;
+  background-color: transparent;
+  border-bottom: none;
+  display: block;
+  padding: 20px 40px;
+}
+
+.pre-auth header p {
+  text-align: left;
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.pre-auth .container {
+  width: 100vw;
+}
+
+.pre-auth main {
+  background-color: #FFF;
+  border-radius: 5px;
+  margin: 120px auto 0;
+  padding: 40px;
+  color: #2C008A;
+  width: 280px;
+}
+
+.pre-auth h2 {
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.pre-auth p {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 24px;
+}
+
+.pre-auth a {
+  text-decoration: underline;
+}
+
+.pre-auth form input[type=text],  
+.pre-auth form input[type=email],  
+.pre-auth form input[type=password]{
+  border-bottom-color: #2C008A;
+  padding: 12px 0;
+}
+.pre-auth form input::placeholder {
+  color: #989898;
+  font-size: 14px;
+}
+
+.pre-auth form input[type=submit] {
+  background-color: #EDA5FF;
+  background: linear-gradient(100deg, rgba(255, 243, 213, 1) 24%, rgba(237, 165, 255, 1) 100%);
+  color: #2C008A;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px;
+  cursor: pointer;
+}
+
+/* Background bubbles */
+.background-bubbles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -100;
+}
+
+.bubble {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  filter: blur(2px)
+}
+
+.small {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+.medium {
+  height: 240px;
+  width: 240px;
+  border-radius: 120px;
+}
+.large {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+}
+
+.bubble-1 {
+  top: 120px;
+  left: 200px;
+}
+
+.bubble-2 {
+  top: 60px;
+  right: 240px;
+}
+
+.bubble-3 {
+  top: 600px;
+  right: 200px;
+}
+
+.bubble-4 {
+  top: 240px;
+  left: 260px;
+}
+
+.bubble-5 {
+  top: 440px;
+  left: 10px;
+}
+
+.bubble-6 {
+  top: 380px;
+  right: 10px;
 }
